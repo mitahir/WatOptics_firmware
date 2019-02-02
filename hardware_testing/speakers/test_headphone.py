@@ -8,7 +8,7 @@ import wave
 chunk = 1024
 
 #open a wav format music
-f = wave.open(r"/home/pi/fydp/a2002011001-e02-16kHz.wav","rb")
+f = wave.open(r"/home/pi/test.wav","rb")
 #instantiate PyAudio
 p = pyaudio.PyAudio()
 #open stream
