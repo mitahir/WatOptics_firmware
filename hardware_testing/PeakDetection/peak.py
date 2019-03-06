@@ -74,12 +74,18 @@ def peakdet(v, delta, x = None):
 
 if __name__=="__main__":
     from matplotlib.pyplot import plot, scatter, show
+<<<<<<< HEAD
     series = [0,0,0,2,4,10,0,-2,0,0,0,2,0,0,0,-2,0]
     maxtab, mintab = peakdet(series,.3)
     plot(series)
     print("Max: " + str(maxtab) + "\n")
     print("Min: " + str(mintab) + "\n")
     print("Len: " + str(len(maxtab)))
+=======
+    series = [0,0,0,2,0,0,0,-2,0,0,0,2,0,0,0,-2,0]
+    maxtab, mintab = peakdet(series,.3)
+    plot(series)
+>>>>>>> 2257728b3a0c4652d08b03feef1d8f9fb2d7cb7d
     scatter(array(maxtab)[:,0], array(maxtab)[:,1], color='blue')
     scatter(array(mintab)[:,0], array(mintab)[:,1], color='red')
     show()
